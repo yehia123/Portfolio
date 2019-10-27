@@ -1,0 +1,113 @@
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+/* Image Hovering for wording to appear*/
+/* Grid wrapper for the wesbite
+* 3 columns with one freespace for each grid
+*the minmax of rows wouldnt pass 100px
+* areas selected for each grid and the placement.
+*/
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin: 5px;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas:
+    "header header header"
+    "bodyI body body"
+    "project7 project2 project3"
+    "project4 project5 project6"
+  }
+/* Header, at the moment it only contains h1 element*/
+.one {
+    grid-area: header;
+    justify-self: center;
+    display: grid;
+    margin: 10px;
+}
+.one-menu{
+    grid-area: header2;
+}
+.two { 
+    grid-area: body;
+    justify-self: center;
+    display: grid;
+    margin: 10px;
+}
+/* Image is placed inside the grid*/
+.three {
+    grid-area: bodyI;
+    display: grid;
+    margin: 10px;
+}
+/*
+* Row grid for three different buttons
+* LinkedIn
+* Github
+* Resume
+*/
+.four {
+    grid-area: mini-menu;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+}
+.five-css {
+    grid-area: project1;
+    display: grid;
+    margin: 10px;
+}
+.six-ml {
+    grid-area: project2;
+    display: grid;
+    margin: 10px;
+}
+.seven-ai {
+    grid-area: project3;
+    display: grid;
+    margin: 10px;
+}
+.eight-alpha {
+    grid-area: project4;
+    display: grid;
+    margin: 10px;
+}
+.nine-perc {
+    grid-area: project5;
+    display: grid;
+    margin: 10px;
+}
+.ten-java {
+    display: grid;
+    margin: 10px;
+    grid-area: project6;
+}
+
+.fullstack {
+    grid-area: project7;
+    display: grid;
+    margin: 10px;
+}
+
+.imagesize{
+    height: 250px;
+    width: 250px;
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (max-width: 700px) { 
+    .wrapper {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+        "header"
+        "bodyI "
+        "body"
+        "project7"
+        "project2"
+        "project3"
+        "project4"
+        "project5" 
+        "project6"
+    }
+    
+}
+

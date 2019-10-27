@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Yehia Qtaish</title>
+   <!-- boostrap for fancy hover button effects
+   <link href="css/hover-min.css" rel="stylesheet">
+   <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">//-->
+   <link rel="stylesheet" href="./styles.css">
+   <script src="/scripts/jquery.min.js"></script>
+   <script src="/bootstrap/js/bootstrap.min.js"></script>
+   <!-- Font awesome import for imgs -->
+   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Welcome to Yehia's Portfolio!</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#top">Home</a></li>
+                        <li><a href="https://www.linkedin.com/in/yehiaqtaish/">LinkedIn</a></li>
+                        <li><a href="https://github.com/yehia123">Github</a></li>
+                        <li><a href="info/Y.Q.Resume.docx" class="button" download><i class="fa fa-download"></i>Download CV</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+<div class="jumbotron wrapper">
+    <!-- first grid for the header, contains only h1 element (soon to be added)-->
+    <div class="one"><h2>Yehia Qtaish pronounced Yah-ya Ku-taysh</h2></div>
+    <!--New menu drop box-->
+    <!-- first part of the body that explains the general information regarding...-->
+    <div class="two">
+        <p>Thank you for visiting my portfolio! I'm Yehia, I graduated with a Bachelor of Science degree in Software Engineering from San Jose State University. I am currently looking to find a company where I can meaningfully contribute, create awesome products and user experiences, and grow as an engineer.  If you are looking for an engineer that is a fast learner, disciplined, and multi-talented, with experience spanning front-end, back-end, and problem solving, let's connect.
+        </p>
+    </div>
+    <!-- image (soon to be added) -->
+    <div class="three">
+            <img src="img/self.JPG" alt="Cinque Terre" styles= " width="500" height="500" " >
+    </div>
+    <!-- buttons for social media-->
+    <!-- list of the academic projects
+    contains pretty much a card-body and card-title, text the setup that is planned to be used throughout the project setup
+    !!TODO!! Insert some border-box design for the grids
+    change the font to make it look more appealing
+    add some hovering affects
+    *IDEA, maybe!! make each project display in one grid at all time and give the optitons for the recruiter to look at more
+    OR || each language should have a different section or page.
+    //-->
+    <!-- 911 Python Machine Learning project
+    Used the card set up for each of the card components    
+    //-->
+    <div class="six-ml">
+        <div class="card-body">
+            <h3>Language: Python</h3>
+            <h4 class="card-title">Machine Learning (Scikit-learn)</h4>
+            <p class="card-text">
+               Developed during my senior year at SJSU.  Using data from kaggle.com, we applied data mining using ML algorithms to predict emergency types when someone calls 911 depending on the caller's location.  Source code can be found below
+            </p>
+            <a href="https://github.com/tmartin293/911/blob/master/911_all.ipynb" target="_blank" class="btn btn-primary">911-Github</a>
+        </div>
+    </div>
+    <!-- Pacman projects, graph search algorithms-->
+    <div class="seven-ai">
+        <div class="card-body">
+            <h3>Language: Python</h3>
+            <h4 class="card-title">Graph Search Tree Implementation (Artificial Intelligence)</h4>
+            <p class="card-text">
+     Based on a course from Berkeley, I was provided with a Pacman game and used multiple graph search algorithms to help Pacman find the optimal path to reach the goal state.  Extensively used depth first search (DFS), breadth first search, uniform cost search.
+                <br>Button below links to the Github URL for the project
+            </p>
+            <a href="https://github.com/yehia123/DFS-BFS-UCS" target="_blank" class="btn btn-primary">Github-Graph_Search</a>
+        </div>
+    </div>
+    <!--Pacman project using backtracking algorithm-->
+    <div class="eight-alpha">
+            <div class="card-body">
+                <h3>Language: Python</h3>
+                <h4 class="card-title">Minimax and AlphaBeta</h4>
+                <p class="card-text">
+                   Implementation of backtracking algorithms for the Pacman game above. The README with in the Github goes in depth on how this algorithm works.
+                    <br> Below is the link to the Github URL.
+                </p>
+                <a href="https://github.com/yehia123/MiniMax-AlphaBeta" target="_blank" class="btn btn-primary">Github-Minimax_Alpha</a>
+            </div>
+        </div>
+    <!--Perecpetron Github link url
+    Each class name with the - ext depending on the project type
+    //-->
+    <div class="nine-perc">
+        <div class="card-body">
+            <h3>Language: Python</h3>
+            <h4 class="card-title"> Perecpetron</h4>
+            <p class="card-text">
+                This project contains the implementation of a supervised learning algorithm (linear classification).  Perceptron makes predictions depending on a set of weights.  Source Code below.
+            </p>
+            <a href="https://github.com/yehia123/PerceptronClassifier" target="_blank"  class="btn btn-primary">Github-Perceptron</a>
+        </div>
+    </div>
+       <!-- Google Calendar Github link url
+    Each class name with the - ext depending on the project type
+    //-->
+    <div class="ten-java">
+        <div class="card-body">
+            <h3>Language: Java</h3>
+            <h4 class="card-title">Google Calendar GUI</h4>
+            <p class="card-text">
+               This projet contains a simple Google calendar that stores events for a user. The UI is simple a rectangle calendar that has button functionality following the traditional MVC pattern. Below is the link to its Github URL
+            </p>
+            <a href="https://github.com/yehia123/Google-Calendar-Java" target="_blank"  class="btn btn-primary"> Github-MVC</a>
+        </div>
+    </div>
+        <!-- Google Calendar Github link url
+    Each class name with the - ext depending on the project type
+    //-->
+    <div class="fullstack">
+        <div class="card-body">
+            <h3>Language: MEAN Stack</h3>
+            <h4 class="card-title">Lift: Industrial App Rental</a></h4>
+            <p class="card-text">
+              This project was developed using Angular 6, MongoDB (Mongoose), Express, and NodeJS. This application creates posts by private owners to rent or sell available tools. </p>
+            <a href="https://github.com/yehia123/MEAN-Stack" target="_blank"  class="btn btn-primary"> Github-Lift</a>
+        </div>
+    </div>
+
+</div>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script>
+
+
+</script>
+
+
+</body>
+</html>
